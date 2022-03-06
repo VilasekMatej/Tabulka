@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Jednoduchá tabulka</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        table{
+            width: 60%;
+            margin: auto;
+        }
+        table, th, td {
+            border: 2px solid rgb(97, 112, 129);
+            border-collapse: collapse;
+
+        }
+        .flag{
+            height: 20px;        
+        }
+        th, td{
+            padding: 5px;
+        }
+        .center{
+            text-align: center;
+        }
+        .right{
+            text-align: right;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .gold{
+            background-color: gold;
+        }
+        .silver{
+            background-color: silver;
+        }
+        .bronz{
+            background-color: #cd7f32;
+        }
+        .color{
+            background-color: lightblue;
+        }
+        .size{
+            font-size:large;
+        }
+        body{
+            background-image: url(pictures/medajle.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        caption{
+            color: white;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <h1>Jednoduchá tabulka v HTML</h1>
+    <table>
+        <caption class="size"><i class="fas fa-skiing"></i>Sjezd mužů - pořadí</caption>
+        <thead>
+            <tr class="color">
+                <th>Umístění</th>
+                <th>Jméno</th>
+                <th>Stát</th>
+                <th>Čas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="gold">
+                <td class="center bold">1.</td>
+                <td class="bold">Feuz</td>
+                <td class="bold"><img src="pictures/sui.png" alt="sui_vlajka" class="flag">  SUI</td>
+                <td class="right bold">1:42.69</td>
+            </tr>
+            <tr class="silver">
+                <td class="center">2.</td>
+                <td>Clarey</td>
+                <td><img src="pictures/flag2_FRA.png" alt="vlajka_francie" class="flag">USA</td>
+                <td class="right">1:42.79</td>
+            </tr>
+            <tr class="bronz">
+                <td class="center">3.</td>
+                <td>Mayer</td>
+                <td><img src="pictures/flag2_AUT.png" alt="vlajka_rakouska" class="flag">AUT</td>
+                <td class="right">1:42.85</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="color">
+                <td colspan="4"><img src="pictures/olympijske_hry.png" alt="olympijske hry vlajka" class="flag">  Zimní olympijské hry Peking 2022 <i class="fas fa-snowflake"></i></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+</body>
+
+</html>
